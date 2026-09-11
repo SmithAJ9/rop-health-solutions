@@ -147,7 +147,8 @@
   /* contact */
   .contact-grid{display:grid;gap:32px}
   @media (min-width:820px){.contact-grid{grid-template-columns:minmax(0,.8fr) 1fr;gap:48px;align-items:stretch}}
-  .contact-media{border-radius:var(--r);overflow:hidden;min-height:300px;background:var(--sage-wash)}
+  .contact-media{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sage-wash)}
+  @media (min-width:820px){.contact-media{aspect-ratio:auto;min-height:300px}}
   .contact-media img{width:100%;height:100%;object-fit:cover;display:block}
   .contact-col{display:grid;gap:26px;align-content:start}
   .contact-card{background:var(--surface);border:1px solid var(--sage-line);border-radius:var(--r);padding:clamp(26px,4vw,38px)}
