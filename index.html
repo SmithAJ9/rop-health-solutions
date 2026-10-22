@@ -1,8 +1,8 @@
 <meta charset="UTF-8">
-<title>R.O.P Health Solutions — Evidence-to-Impact &amp; Performance Optimization</title>
-<meta name="description" content="R.O.P Health Solutions Ltd — a Nigerian health and development consulting firm: research and evaluation, technical assistance, health systems strengthening, grants management and capacity development.">
+<title>R.O.P Health Solutions — Insights Strategy and Impact</title>
+<meta name="description" content="R.O.P Health Solutions Ltd (ROP-HS) is a Nigeria-based public health and social development consulting firm: research and evaluation, technical assistance, grant management and capacity development.">
 <meta property="og:title" content="R.O.P Health Solutions Ltd">
-<meta property="og:description" content="A Nigerian health and development consulting firm — Evidence-to-Impact & Performance Optimization.">
+<meta property="og:description" content="A Nigeria-based public health and social development consulting firm — Insights Strategy and Impact.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rophealthsolutions.org/">
 <meta property="og:image" content="https://rophealthsolutions.org/photo-band.jpg">
@@ -153,7 +153,7 @@
   .contact-media{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--sage-wash)}
   @media (min-width:820px){.contact-media{aspect-ratio:auto;min-height:300px}}
   .contact-media img{width:100%;height:100%;object-fit:cover;display:block}
-  .contact-col{display:grid;gap:26px;align-content:start}
+  .contact-col{display:grid;gap:32px;align-content:center}
   .contact-card{background:var(--surface);border:1px solid var(--sage-line);border-radius:var(--r);padding:clamp(26px,4vw,38px)}
   .dl dt{font:700 .7rem/1.4 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--sage-deep);margin-top:22px}
   .dl dt:first-child{margin-top:0}
@@ -168,6 +168,7 @@
   .foot-brand{display:flex;align-items:center;gap:12px}
   .foot-brand svg{height:36px}
   .foot-brand .wm strong{color:#fff;font-size:1rem}
+  .foot-brand .wm strong b{color:#9FBFA9}
   .foot-brand .wm small{color:#8A93A6}
   .foot-links{display:flex;flex-wrap:wrap;gap:22px;font:600 .88rem/1 Manrope,sans-serif}
   .foot-links a{text-decoration:none;color:#C6CCD9}
@@ -235,6 +236,86 @@
   .serve{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0}
   .serve li{list-style:none;font:600 .8rem/1 Manrope,sans-serif;color:var(--navy-soft);background:var(--sage-wash);border:1px solid var(--sage-line);border-radius:999px;padding:9px 14px}
   /* why / engage */
+  /* Why: flash-card slider */
+  .why-wrap{display:grid;gap:8px}
+  @media (min-width:900px){.why-wrap{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}}
+  .slider-ctrl{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+  @media (min-width:900px){.slider-ctrl{margin-bottom:0}}
+  .sbtn{width:48px;height:48px;border-radius:50%;border:2px solid var(--sage-line);background:var(--surface);color:var(--navy);display:grid;place-items:center;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+  .sbtn:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+  .sbtn:disabled{opacity:.35;cursor:default;background:var(--surface);color:var(--navy);border-color:var(--sage-line)}
+  .sbtn svg{width:20px;height:20px}
+  .scount{font:600 .9rem/1 Manrope,sans-serif;color:var(--navy-mute);letter-spacing:.06em}
+  .scount b{color:var(--navy)}
+  .slider{min-width:0}
+  .strack{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 8px;outline:none}
+  .strack::-webkit-scrollbar{display:none}
+  .fcard{flex:0 0 86%;scroll-snap-align:start;background:var(--surface);border:1px solid var(--sage-line);border-radius:var(--r);padding:clamp(28px,4vw,44px);min-height:260px;display:flex;flex-direction:column;box-shadow:0 18px 40px -30px rgba(27,38,59,.45)}
+  @media (min-width:900px){.fcard{flex-basis:84%;min-height:300px}}
+  .fnum{font:800 3.2rem/1 Manrope,sans-serif;color:transparent;-webkit-text-stroke:2px var(--sage);letter-spacing:-.04em;margin-bottom:auto;padding-bottom:28px}
+  .fcard h3{font-size:clamp(1.25rem,2.2vw,1.55rem);margin:0 0 10px}
+  .fcard p{color:var(--navy-soft);margin:0;max-width:48ch}
+  .sdots{display:flex;gap:8px;margin-top:18px}
+  .sdots button{width:8px;height:8px;padding:0;border:0;border-radius:4px;background:var(--sage-line);cursor:pointer;transition:width .2s,background .2s}
+  .sdots button.on{width:26px;background:var(--sage)}
+  /* Partner: accordion */
+  .partner-wrap{display:grid}
+  @media (min-width:900px){.partner-wrap{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.partner-wrap .sec-head{margin-bottom:0;position:sticky;top:110px}}
+  .acc{border-top:1px solid var(--sage-line)}
+  .acc details{border-bottom:1px solid var(--sage-line)}
+  .acc summary{list-style:none;display:grid;grid-template-columns:42px 1fr 28px;align-items:center;gap:10px;padding:20px 0;cursor:pointer;font:700 1.04rem/1.35 Manrope,sans-serif;color:var(--navy)}
+  .acc summary::-webkit-details-marker{display:none}
+  .acc summary:hover .atitle{color:var(--sage-deep)}
+  .anum{font:800 .82rem/1 Manrope,sans-serif;color:var(--sage);letter-spacing:.06em}
+  .acc summary i{position:relative;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--sage-line);transition:background .2s,border-color .2s}
+  .acc summary i::before,.acc summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:2px;margin:-1px 0 0 -5.5px;background:var(--navy);border-radius:1px;transition:transform .25s}
+  .acc summary i::after{transform:rotate(90deg)}
+  .acc details[open] summary i{background:var(--sage);border-color:var(--sage)}
+  .acc details[open] summary i::before{background:#fff}
+  .acc details[open] summary i::after{transform:rotate(0);background:#fff}
+  .acc details p{margin:0 0 22px 52px;color:var(--navy-soft);font-size:.96rem;max-width:56ch}
+  /* Leadership tabs */
+  .ltabs{display:grid;gap:10px;margin-bottom:18px}
+  @media (min-width:760px){.ltabs{grid-template-columns:repeat(3,1fr);gap:14px}}
+  .ltabs button{display:flex;align-items:center;gap:14px;text-align:left;padding:14px 16px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#C5CDDA;cursor:pointer;font:inherit;transition:background .2s,border-color .2s}
+  .ltabs button:hover{background:rgba(255,255,255,.07)}
+  .ltabs button[aria-selected="true"]{background:rgba(94,125,107,.22);border-color:#9FBFA9}
+  .ltabs .avatar{width:46px;height:46px;font-size:.88rem;margin:0;flex:none;background:rgba(255,255,255,.1);box-shadow:none}
+  .ltabs button[aria-selected="true"] .avatar{background:var(--sage)}
+  .lt-txt{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .lt-txt b{color:#fff;font-size:.98rem;line-height:1.25}
+  .lt-txt small{font:700 .66rem/1.3 Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#9FBFA9}
+  .js-anim .lpanels .person{display:none}
+  .lpanels .person{display:grid;gap:18px;margin-bottom:16px}
+  .js-anim .lpanels .person.on{display:grid;margin:0;animation:lpIn .35s ease}
+  @keyframes lpIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media (min-width:900px){.lpanels .person{grid-template-columns:minmax(260px,.8fr) 1.4fr;gap:44px;align-items:start;padding:40px 44px}}
+  .lp-id{display:flex;gap:18px;align-items:center}
+  .lp-id .avatar{margin:0;flex:none}
+  .lpanels .person p:not(.role){font-size:1.02rem;line-height:1.75}
+  html:not(.js-anim) .ltabs{display:none}
+  /* Who we work with: ribbon */
+  .ribbon{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .ribbon{display:grid;gap:16px}
+  .rtrack{display:flex;gap:16px;width:max-content;list-style:none;margin:0;padding:4px 0;animation:ribbon 60s linear infinite}
+  .rtrack.rev{animation-direction:reverse;animation-duration:52s}
+  .ribbon:hover .rtrack{animation-play-state:paused}
+  .rtrack li{display:flex;align-items:center;gap:16px;white-space:nowrap;padding:16px 30px 16px 16px;background:var(--surface);border:1px solid var(--sage-line);border-radius:999px;font:600 clamp(.98rem,1.3vw,1.12rem)/1.2 Manrope,sans-serif;color:var(--navy);box-shadow:0 10px 26px -20px rgba(27,38,59,.4)}
+  .rtrack .ico{width:46px;height:46px;border-radius:50%;background:var(--sage-wash);display:grid;place-items:center;flex:none}
+  .rtrack .ico svg{height:22px}
+  .rrow{overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab}
+  .rrow::-webkit-scrollbar{display:none}
+  .rrow.drag{cursor:grabbing;user-select:none}
+  .js-anim .rtrack{animation:none}
+  @keyframes ribbon{to{transform:translateX(calc(-50% - 8px))}}
+  @media (prefers-reduced-motion:reduce){.ribbon{-webkit-mask-image:none;mask-image:none;padding-inline:var(--pad)}.rtrack{animation:none;flex-wrap:wrap;width:auto}.rtrack li[aria-hidden]{display:none}}
+  .sec-lead{margin-top:14px;color:var(--navy-soft);max-width:60ch}
+  .contact-intro h2{margin:14px 0 0}
+  .contact-intro .contact-actions{margin:28px 0 0}
+  .cdetails{display:grid;gap:22px;background:var(--surface);border:1px solid var(--sage-line);border-radius:var(--r);padding:clamp(24px,3.5vw,34px);margin:0}
+  @media (min-width:560px){.cdetails{grid-template-columns:1fr 1fr}.cdetails > div:last-child{grid-column:1/-1}}
+  .cdetails dt{margin-top:0}
+  .cdetails dd{margin:6px 0 0}
   .why-list{display:grid;gap:0}
   @media (min-width:760px){.why-list{grid-template-columns:1fr 1fr;column-gap:44px}}
   .why-list > div{padding:20px 0;border-top:1px solid var(--sage-line)}
@@ -371,23 +452,25 @@
         <p class="eyebrow">Our team</p>
         <h2>Leadership</h2>
       </div>
-      <div class="cards">
-        <article class="card person reveal" data-d="1">
-          <span class="avatar" aria-hidden="true">RO</span>
-          <h3>Dr. Remi Abiola Oladigbolu</h3>
-          <p class="role">Executive Director — Strategy, Research &amp; Business Development</p>
+      <div class="ltabs" role="tablist" aria-label="Directors">
+        <button type="button" role="tab" id="lt0" aria-controls="lp0" aria-selected="true"><span class="avatar" aria-hidden="true">RO</span><span class="lt-txt"><b>Dr. Remi Abiola Oladigbolu</b><small>Executive Director</small></span></button>
+        <button type="button" role="tab" id="lt1" aria-controls="lp1" aria-selected="false" tabindex="-1"><span class="avatar" aria-hidden="true">OG</span><span class="lt-txt"><b>Dr. Ogochukwu Michael Ginigeme</b><small>Director</small></span></button>
+        <button type="button" role="tab" id="lt2" aria-controls="lp2" aria-selected="false" tabindex="-1"><span class="avatar" aria-hidden="true">PG</span><span class="lt-txt"><b>Dr. Pamela Nenpanmwa Gado, PMP</b><small>Director</small></span></button>
+      </div>
+      <div class="lpanels reveal" data-d="2">
+        <article class="card person on" role="tabpanel" id="lp0" aria-labelledby="lt0">
+          <div class="lp-id"><span class="avatar" aria-hidden="true">RO</span><div><h3>Dr. Remi Abiola Oladigbolu</h3>
+          <p class="role">Executive Director — Strategy, Research &amp; Business Development</p></div></div>
           <p>Remi sets ROP-HS's strategic direction and leads our work with government and donor partners. A public-health physician, he previously led ICAP Global Health's Nigeria programme, and brings that country-level leadership — across epidemiology, health systems strengthening and implementation science — directly into how we design and deliver engagements.</p>
         </article>
-        <article class="card person reveal" data-d="2">
-          <span class="avatar" aria-hidden="true">OG</span>
-          <h3>Dr. Ogochukwu Michael Ginigeme</h3>
-          <p class="role">Director — Technical, Programs, Strategic Partnerships &amp; Learning</p>
+        <article class="card person" role="tabpanel" id="lp1" aria-labelledby="lt1">
+          <div class="lp-id"><span class="avatar" aria-hidden="true">OG</span><div><h3>Dr. Ogochukwu Michael Ginigeme</h3>
+          <p class="role">Director — Technical, Programs, Strategic Partnerships &amp; Learning</p></div></div>
           <p>Ogochukwu leads technical design, programme delivery and learning at ROP-HS. Over more than a decade running health programmes across Nigeria and South Sudan — spanning HIV/TB, maternal and child health, and health systems strengthening — he's developed the field-tested judgment for turning strategy into results on the ground, and the partnership skills that keep multi-agency work moving.</p>
         </article>
-        <article class="card person reveal" data-d="3">
-          <span class="avatar" aria-hidden="true">PG</span>
-          <h3>Dr. Pamela Nenpanmwa Gado, PMP</h3>
-          <p class="role">Director — Grants, Knowledge Management &amp; Corporate Services / Company Secretary</p>
+        <article class="card person" role="tabpanel" id="lp2" aria-labelledby="lt2">
+          <div class="lp-id"><span class="avatar" aria-hidden="true">PG</span><div><h3>Dr. Pamela Nenpanmwa Gado, PMP</h3>
+          <p class="role">Director — Grants, Knowledge Management &amp; Corporate Services / Company Secretary</p></div></div>
           <p>Pamela oversees grants, knowledge management and corporate governance at ROP-HS. Close to fifteen years managing USAID Nigeria's programme and grant portfolios taught her how donor-funded work actually gets won, delivered and accounted for — expertise she now applies to keeping our proposals, compliance and partnerships disciplined.</p>
         </article>
       </div>
@@ -485,91 +568,124 @@
         <p class="eyebrow">Reach</p>
         <h2>Who we work with</h2>
       </div>
-      <div class="reach-grid">
-        <div class="reveal" data-d="1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9M19 21V9M4 9l8-5 8 5M9 21v-5h6v5"/></svg></span><p>Federal &amp; State ministries, departments and agencies</p></div>
-        <div class="reveal" data-d="2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><p>Bilateral &amp; multilateral development partners</p></div>
-        <div class="reveal" data-d="3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span><p>International &amp; indigenous NGOs</p></div>
-        <div class="reveal" data-d="4"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.4-8.9A5 5 0 0 1 12 6a5 5 0 0 1 9.4 6.1C19 16.5 12 21 12 21z"/></svg></span><p>Foundations &amp; philanthropies</p></div>
-        <div class="reveal" data-d="1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 10v6"/></svg></span><p>Academic &amp; research institutions</p></div>
-        <div class="reveal" data-d="2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><p>Private-sector health organisations</p></div>
-        <div class="reveal" data-d="3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="7" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 8.7 10.6 15.4M16.3 8.7 13.4 15.4M8.3 7h7.4"/></svg></span><p>Prime contractors &amp; consortium leads</p></div>
-      </div>
+    </div>
+    <div class="ribbon reveal" data-d="2">
+      <div class="rrow"><ul class="rtrack"><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9M19 21V9M4 9l8-5 8 5M9 21v-5h6v5"/></svg></span>Federal &amp; State ministries, departments and agencies</li><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>Bilateral &amp; multilateral development partners</li><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>International &amp; indigenous NGOs</li><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.4-8.9A5 5 0 0 1 12 6a5 5 0 0 1 9.4 6.1C19 16.5 12 21 12 21z"/></svg></span>Foundations &amp; philanthropies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9M19 21V9M4 9l8-5 8 5M9 21v-5h6v5"/></svg></span>Federal &amp; State ministries, departments and agencies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>Bilateral &amp; multilateral development partners</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>International &amp; indigenous NGOs</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.4-8.9A5 5 0 0 1 12 6a5 5 0 0 1 9.4 6.1C19 16.5 12 21 12 21z"/></svg></span>Foundations &amp; philanthropies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9M19 21V9M4 9l8-5 8 5M9 21v-5h6v5"/></svg></span>Federal &amp; State ministries, departments and agencies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>Bilateral &amp; multilateral development partners</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>International &amp; indigenous NGOs</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.4-8.9A5 5 0 0 1 12 6a5 5 0 0 1 9.4 6.1C19 16.5 12 21 12 21z"/></svg></span>Foundations &amp; philanthropies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9M19 21V9M4 9l8-5 8 5M9 21v-5h6v5"/></svg></span>Federal &amp; State ministries, departments and agencies</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>Bilateral &amp; multilateral development partners</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>International &amp; indigenous NGOs</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.4-8.9A5 5 0 0 1 12 6a5 5 0 0 1 9.4 6.1C19 16.5 12 21 12 21z"/></svg></span>Foundations &amp; philanthropies</li></ul></div>
+      <div class="rrow"><ul class="rtrack rev"><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 10v6"/></svg></span>Academic &amp; research institutions</li><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>Private-sector health organisations</li><li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="7" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 8.7 10.6 15.4M16.3 8.7 13.4 15.4M8.3 7h7.4"/></svg></span>Prime contractors &amp; consortium leads</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 10v6"/></svg></span>Academic &amp; research institutions</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>Private-sector health organisations</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="7" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 8.7 10.6 15.4M16.3 8.7 13.4 15.4M8.3 7h7.4"/></svg></span>Prime contractors &amp; consortium leads</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 10v6"/></svg></span>Academic &amp; research institutions</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>Private-sector health organisations</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="7" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 8.7 10.6 15.4M16.3 8.7 13.4 15.4M8.3 7h7.4"/></svg></span>Prime contractors &amp; consortium leads</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 10v6"/></svg></span>Academic &amp; research institutions</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>Private-sector health organisations</li><li aria-hidden="true"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7D6B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="7" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 8.7 10.6 15.4M16.3 8.7 13.4 15.4M8.3 7h7.4"/></svg></span>Prime contractors &amp; consortium leads</li></ul></div>
     </div>
   </section>
 
   <section id="why">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Why ROP-HS</p>
-        <h2>Why clients and partners work with us</h2>
+    <div class="container why-wrap">
+      <div class="why-side">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Why ROP-HS</p>
+          <h2>Why clients and partners work with us</h2>
+        </div>
+        <div class="slider-ctrl reveal" data-d="2">
+          <button type="button" class="sbtn" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          <span class="scount"><b>01</b> / 07</span>
+          <button type="button" class="sbtn" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
       </div>
-      <div class="why-list">
-        <div class="reveal"><b>Senior expertise, no unnecessary layers</b><p>You work directly with experienced professionals who understand both strategy and implementation.</p></div>
-        <div class="reveal" data-d="2"><b>Nigeria-rooted, Africa-oriented</b><p>We know the policy, institutional and operational realities here, with regional and global-health perspective.</p></div>
-        <div class="reveal"><b>An evidence-to-impact mindset</b><p>We don't stop at reports — we help you interpret findings, improve programmes and use evidence for decisions.</p></div>
-        <div class="reveal" data-d="2"><b>Implementation credibility</b><p>Our leadership has worked across facility, community, state, national, donor and country-management levels.</p></div>
-        <div class="reveal"><b>Grant and delivery discipline</b><p>From opportunity identification and proposals through implementation, compliance, reporting, learning and close-out.</p></div>
-        <div class="reveal" data-d="2"><b>A flexible delivery model</b><p>A lean senior team for short assignments, or multidisciplinary teams and partnerships for larger engagements.</p></div>
-        <div class="reveal"><b>Local ownership and sustainability</b><p>We design with institutions, not around them — strengthening the people and systems that remain.</p></div>
+      <div class="slider reveal" data-d="2" aria-roledescription="carousel" aria-label="Why clients and partners work with us">
+        <div class="strack" tabindex="0">
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="1 of 7">
+            <span class="fnum">01</span>
+            <h3>Senior expertise, no unnecessary layers</h3>
+            <p>You work directly with experienced professionals who understand both strategy and implementation.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="2 of 7">
+            <span class="fnum">02</span>
+            <h3>Nigeria-rooted, Africa-oriented</h3>
+            <p>We know the policy, institutional and operational realities here, with regional and global-health perspective.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="3 of 7">
+            <span class="fnum">03</span>
+            <h3>An evidence-to-impact mindset</h3>
+            <p>We don't stop at reports — we help you interpret findings, improve programmes and use evidence for decisions.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="4 of 7">
+            <span class="fnum">04</span>
+            <h3>Implementation credibility</h3>
+            <p>Our leadership has worked across facility, community, state, national, donor and country-management levels.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="5 of 7">
+            <span class="fnum">05</span>
+            <h3>Grant and delivery discipline</h3>
+            <p>From opportunity identification and proposals through implementation, compliance, reporting, learning and close-out.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="6 of 7">
+            <span class="fnum">06</span>
+            <h3>A flexible delivery model</h3>
+            <p>A lean senior team for short assignments, or multidisciplinary teams and partnerships for larger engagements.</p>
+          </article>
+          <article class="fcard" role="group" aria-roledescription="slide" aria-label="7 of 7">
+            <span class="fnum">07</span>
+            <h3>Local ownership and sustainability</h3>
+            <p>We design with institutions, not around them — strengthening the people and systems that remain.</p>
+          </article>
+        </div>
+        <div class="sdots"><button type="button" aria-label="Go to point 1"></button><button type="button" aria-label="Go to point 2"></button><button type="button" aria-label="Go to point 3"></button><button type="button" aria-label="Go to point 4"></button><button type="button" aria-label="Go to point 5"></button><button type="button" aria-label="Go to point 6"></button><button type="button" aria-label="Go to point 7"></button></div>
       </div>
     </div>
   </section>
 
   <section class="band-wash" id="partner">
-    <div class="container">
+    <div class="container partner-wrap">
       <div class="sec-head reveal">
         <p class="eyebrow">Ways to engage</p>
         <h2>Partner with us</h2>
       </div>
-      <div class="engage-grid">
-        <div class="reveal" data-d="1"><b>Prime consultant</b><span>Lead a defined technical, research, evaluation, training or advisory assignment.</span></div>
-        <div class="reveal" data-d="2"><b>Local implementing partner / subcontractor</b><span>Nigeria-based technical leadership, implementation support, research, capacity development or programme management.</span></div>
-        <div class="reveal" data-d="3"><b>Consortium member</b><span>Specialist expertise, local systems knowledge, stakeholder engagement and delivery capacity for larger bids.</span></div>
-        <div class="reveal" data-d="4"><b>Research / evaluation partner</b><span>Design and execute studies, evaluations, implementation research and evidence-translation work.</span></div>
-        <div class="reveal" data-d="5"><b>Technical advisory</b><span>Short- or medium-term senior advisory support to government, NGOs, funders or programmes.</span></div>
-        <div class="reveal" data-d="6"><b>Institutional strengthening partner</b><span>Support systems, people, processes, grants, learning and organisational performance.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="photo-slot photo-band has-photo reveal">
-      <img src="photo-band.jpg" width="2200" height="733" loading="lazy" alt="Two colleagues discussing data and charts on a glass wall">
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="cta reveal">
-        <h2>Let's talk about your assignment</h2>
-        <p>Whether it's a clearly defined piece of work or a longer-term partnership, tell us what you're trying to achieve and we'll tell you how ROP-HS can help.</p>
-        <a class="btn" href="#contact">Start a conversation</a>
+      <div class="acc reveal" data-d="2">
+        <details name="engage" open>
+          <summary><span class="anum">01</span><span class="atitle">Prime consultant</span><i aria-hidden="true"></i></summary>
+          <p>Lead a defined technical, research, evaluation, training or advisory assignment.</p>
+        </details>
+        <details name="engage">
+          <summary><span class="anum">02</span><span class="atitle">Local implementing partner / subcontractor</span><i aria-hidden="true"></i></summary>
+          <p>Nigeria-based technical leadership, implementation support, research, capacity development or programme management.</p>
+        </details>
+        <details name="engage">
+          <summary><span class="anum">03</span><span class="atitle">Consortium member</span><i aria-hidden="true"></i></summary>
+          <p>Specialist expertise, local systems knowledge, stakeholder engagement and delivery capacity for larger bids.</p>
+        </details>
+        <details name="engage">
+          <summary><span class="anum">04</span><span class="atitle">Research / evaluation partner</span><i aria-hidden="true"></i></summary>
+          <p>Design and execute studies, evaluations, implementation research and evidence-translation work.</p>
+        </details>
+        <details name="engage">
+          <summary><span class="anum">05</span><span class="atitle">Technical advisory</span><i aria-hidden="true"></i></summary>
+          <p>Short- or medium-term senior advisory support to government, NGOs, funders or programmes.</p>
+        </details>
+        <details name="engage">
+          <summary><span class="anum">06</span><span class="atitle">Institutional strengthening partner</span><i aria-hidden="true"></i></summary>
+          <p>Support systems, people, processes, grants, learning and organisational performance.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <section class="band-wash" id="contact">
     <div class="container">
-      <div class="sec-head reveal"><p class="eyebrow">Contact</p><h2>Get in touch</h2></div>
       <div class="contact-grid">
         <div class="contact-media reveal">
           <img src="photo-contact.jpg" width="900" height="1125" loading="lazy" alt="A consultant on a call, taking notes">
         </div>
         <div class="contact-col">
-        <div class="contact-card reveal" data-d="2">
-          <p>Start with a short conversation about your priorities and constraints. We'll follow up to arrange a full discussion.</p>
-          <div class="contact-actions">
-            <a class="btn" href="https://wa.me/2348064191374" rel="noopener">Chat on WhatsApp</a>
-            <a class="btn btn-ghost" href="mailto:info@rophealthsolutions.org">Email us</a>
+          <div class="contact-intro reveal" data-d="2">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's talk about your assignment</h2>
+            <p class="sec-lead">Whether it's a clearly defined piece of work or a longer-term partnership, tell us what you're trying to achieve and we'll tell you how ROP-HS can help.</p>
+            <div class="contact-actions">
+              <a class="btn" href="https://wa.me/2348064191374" rel="noopener">Chat on WhatsApp</a>
+              <a class="btn btn-ghost" href="mailto:info@rophealthsolutions.org">Email us</a>
+            </div>
           </div>
-        </div>
-        <dl class="dl reveal" data-d="3">
-          <dt>Email</dt>
-          <dd><a href="mailto:info@rophealthsolutions.org">info@rophealthsolutions.org</a></dd>
-          <dt>Telephone No.</dt>
-          <dd class="phones"><a href="tel:+2348036727049">+234 803 672 7049</a><a href="tel:+2348064191374">+234 806 419 1374</a><a href="tel:+2348033726997">+234 803 372 6997</a></dd>
-          <dt>Office</dt>
-          <dd>The Meeting Point<br>Yemi Akinseye-George, Off Oladipo Diya Street<br>Behind NNPC, Gudu District<br>Abuja, Nigeria</dd>
+        <dl class="dl cdetails reveal" data-d="3">
+          <div><dt>Email</dt><dd><a href="mailto:info@rophealthsolutions.org">info@rophealthsolutions.org</a></dd></div>
+          <div><dt>Telephone No.</dt><dd class="phones"><a href="tel:+2348036727049">+234 803 672 7049</a><a href="tel:+2348064191374">+234 806 419 1374</a><a href="tel:+2348033726997">+234 803 372 6997</a></dd></div>
+          <div><dt>Office</dt><dd>The Meeting Point<br>Yemi Akinseye-George, Off Oladipo Diya Street<br>Behind NNPC, Gudu District<br>Abuja, Nigeria</dd></div>
         </dl>
         </div>
       </div>
@@ -612,5 +728,61 @@
   els.forEach(function(e){ io.observe(e); });
   // safety net: never leave content permanently hidden if something goes wrong
   setTimeout(function(){ els.forEach(show); }, 6000);
+})();
+</script>
+<script>
+(function(){
+  var sl=document.querySelector('.slider'); if(!sl) return;
+  var tr=sl.querySelector('.strack'), cards=[].slice.call(tr.children), dots=[].slice.call(sl.querySelectorAll('.sdots button'));
+  var cnt=document.querySelector('.scount b'), prev=document.querySelector('.sbtn[data-dir="-1"]'), next=document.querySelector('.sbtn[data-dir="1"]');
+  function idx(){ var x=tr.scrollLeft, best=0, d=1e9; cards.forEach(function(c,i){ var dd=Math.abs(c.offsetLeft-tr.offsetLeft-x); if(dd<d){d=dd;best=i;} }); if(tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4) best=cards.length-1; return best; }
+  function go(i){ i=Math.max(0,Math.min(cards.length-1,i)); tr.scrollTo({left:cards[i].offsetLeft-tr.offsetLeft,behavior:'smooth'}); }
+  function upd(){ var i=idx(); dots.forEach(function(d,j){ d.classList.toggle('on',j===i); }); if(cnt) cnt.textContent=(i<9?'0':'')+(i+1); if(prev) prev.disabled=i===0; if(next) next.disabled=i===cards.length-1; }
+  [prev,next].forEach(function(b){ if(b) b.addEventListener('click',function(){ go(idx()+(+b.getAttribute('data-dir'))); }); });
+  dots.forEach(function(d,j){ d.addEventListener('click',function(){ go(j); }); });
+  tr.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'){e.preventDefault();go(idx()+1);} if(e.key==='ArrowLeft'){e.preventDefault();go(idx()-1);} });
+  var t; tr.addEventListener('scroll',function(){ clearTimeout(t); t=setTimeout(upd,60); },{passive:true});
+  window.addEventListener('resize',upd); upd();
+})();
+</script>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.ltabs [role="tab"]')); if(!tabs.length) return;
+  function sel(i,focus){ tabs.forEach(function(t,j){ var on=j===i; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1; document.getElementById(t.getAttribute('aria-controls')).classList.toggle('on',on); }); if(focus) tabs[i].focus(); }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ sel(i); });
+    t.addEventListener('keydown',function(e){ var k=e.key; if(k==='ArrowRight'||k==='ArrowDown'){e.preventDefault();sel((i+1)%tabs.length,true);} if(k==='ArrowLeft'||k==='ArrowUp'){e.preventDefault();sel((i+tabs.length-1)%tabs.length,true);} });
+  });
+})();
+</script>
+<script>
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  [].slice.call(document.querySelectorAll('.rrow')).forEach(function(row){
+    var tr=row.querySelector('.rtrack'), lis=tr.children, n=lis.length/4, dir=tr.classList.contains('rev')?-1:1;
+    var speed=dir*28, pos=0, hold=false, hover=false, resumeAt=0, last=0;
+    function half(){ return lis[n*2].offsetLeft-lis[0].offsetLeft; }
+    function norm(){ var h=half(); if(h<=0) return; while(pos>=h) pos-=h; while(pos<0) pos+=h; }
+    function pause(){ hold=true; }
+    function resume(ms){ hold=false; resumeAt=performance.now()+(ms||2000); }
+    pos=dir<0?half():0; row.scrollLeft=pos;
+    function tick(t){
+      var dt=last?Math.min(t-last,60):0; last=t;
+      if(!hold && !hover && t>=resumeAt){ pos+=speed*dt/1000; norm(); row.scrollLeft=pos; }
+      else { pos=row.scrollLeft; }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    row.addEventListener('mouseenter',function(){ hover=true; });
+    row.addEventListener('mouseleave',function(){ hover=false; resumeAt=performance.now()+600; });
+    row.addEventListener('touchstart',pause,{passive:true});
+    row.addEventListener('touchend',function(){ resume(2000); },{passive:true});
+    row.addEventListener('wheel',function(){ resumeAt=performance.now()+2000; },{passive:true});
+    // mouse drag
+    var dx=0, sl=0, down=false;
+    row.addEventListener('mousedown',function(e){ down=true; dx=e.pageX; sl=row.scrollLeft; row.classList.add('drag'); pause(); e.preventDefault(); });
+    window.addEventListener('mousemove',function(e){ if(!down) return; row.scrollLeft=sl-(e.pageX-dx); });
+    window.addEventListener('mouseup',function(){ if(!down) return; down=false; row.classList.remove('drag'); pos=row.scrollLeft; norm(); row.scrollLeft=pos; resume(2000); });
+  });
 })();
 </script>
